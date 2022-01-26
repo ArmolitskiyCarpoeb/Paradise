@@ -64,14 +64,7 @@ SUBSYSTEM_DEF(ticker)
 
 /datum/controller/subsystem/ticker/Initialize()
 	login_music = pick(\
-	'sound/music/thunderdome.ogg',\
-	'sound/music/space.ogg',\
-	'sound/music/pilotpriest-origin-one.ogg',\
-	'sound/music/pilotpriest-tell-them-now.ogg',\
-	'sound/music/pilotpriest-now-be-the-light.ogg',\
-	'sound/music/title1.ogg',\
-	'sound/music/title2.ogg',\
-	'sound/music/title3.ogg',)
+	'sound/music/sigma_male_rule.ogg',)
 
 	return ..()
 
