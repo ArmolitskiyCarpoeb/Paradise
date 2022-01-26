@@ -41,3 +41,4 @@ stddef.dm
 
 # Ignore compiled linux libs in the root folder, e.g. librust_g.so
 /*.so
+/data/
