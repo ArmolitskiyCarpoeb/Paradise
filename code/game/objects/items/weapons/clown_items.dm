@@ -34,16 +34,6 @@
 	origin_tech = "materials=4;engineering=4"
 	honk_sounds = list('sound/items/airhorn2.ogg' = 1)
 
-/obj/item/bikehorn/pig // Dementiy, goni sviney!
-	name = "rubber piggy"
-	desc = "The people demand pigs!"
-	icon = 'icons/obj/toy.dmi'
-	icon_state = "pig1"
-	item_state = "pig1"
-	throwforce = 0
-	honk_sounds = list('sound/items/pig1.ogg','sound/items/pig2.ogg','sound/items/pig3.ogg' = 3)
-	attack_verb = list("oinked")
-
 /obj/item/bikehorn/golden
 	name = "golden bike horn"
 	desc = "Golden? Clearly, its made with bananium! Honk!"
