@@ -170,8 +170,8 @@
 	list_reagents = list("cola" = 30)
 
 /obj/item/reagent_containers/food/drinks/cans/beer
-	name = "space beer"
-	desc = "Contains only water, malt and hops."
+	name = "Пиво «Оболонь»"
+	desc = "Наше пиво споживає кожен п'ятий українець. «ОБОЛОНЬ» — найбiльший український виробник напоїв."
 	icon_state = "beer"
 	is_glass = 1
 	list_reagents = list("beer" = 30)
