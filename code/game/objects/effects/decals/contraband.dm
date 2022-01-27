@@ -365,6 +365,16 @@
 	desc = "The Griffin commands you to be the worst you can be. Will you?"
 	icon_state = "poster33"
 
+/obj/structure/sign/poster/contraband/brigador
+	name = "BRIGADOR"
+	desc = "Solo Nobre must fall."
+	icon_state = "poster34"
+
+/obj/structure/sign/poster/contraband/drive
+	name = "The Drive"
+	desc = "Watch The Drive (20xx) film."
+	icon_state = "poster35"
+
 /obj/structure/sign/poster/official
 	poster_item_name = "motivational poster"
 	poster_item_desc = "An official Nanotrasen-issued poster to foster a compliant and obedient workforce. It comes with state-of-the-art adhesive backing, for easy pinning to any vertical surface."
