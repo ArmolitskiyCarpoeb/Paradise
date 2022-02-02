@@ -52,12 +52,12 @@
 	log_override = TRUE
 
 /obj/item/projectile/bullet/weakbullet3
-	damage = 26
+	damage = 28
 
 /obj/item/projectile/bullet/weakbullet4
 	name = "rubber bullet"
 	damage = 6
-	stamina = 37
+	stamina = 38
 	icon_state = "bullet-r"
 
 /obj/item/projectile/bullet/toxinbullet
@@ -77,13 +77,13 @@
 	damage = 15
 
 /obj/item/projectile/bullet/armourpiercing
-	damage = 25
+	damage = 28
 	armour_penetration = 13
 
 /obj/item/projectile/bullet/pellet
 	name = "pellet"
-	damage = 19.5
-	tile_dropoff = 0.75
+	damage = 20.5
+	tile_dropoff = 0.6
 	tile_dropoff_s = 1.25
 	armour_penetration = -20
 
@@ -131,7 +131,7 @@
  	..()
 
 /obj/item/projectile/bullet/midbullet
-	damage = 32
+	damage = 35
 	stamina = 50 //two rounds from the c20r knocks people down
 
 /obj/item/projectile/bullet/midbullet_r
@@ -139,17 +139,17 @@
 	stamina = 70 //Still two rounds to knock people down
 
 /obj/item/projectile/bullet/midbullet2
-	damage = 35
+	damage = 38
 
 /obj/item/projectile/bullet/midbullet3
-	damage = 46
+	damage = 48
 
 /obj/item/projectile/bullet/midbullet3/hp
-	damage = 60
+	damage = 62
 	armour_penetration = -45
 
 /obj/item/projectile/bullet/midbullet3/ap
-	damage = 40
+	damage = 42
 	armour_penetration = 50
 
 /obj/item/projectile/bullet/midbullet3/fire/on_hit(atom/target, blocked = 0)
@@ -159,7 +159,7 @@
 		M.IgniteMob()
 
 /obj/item/projectile/bullet/heavybullet
-	damage = 48
+	damage = 50
 
 /obj/item/projectile/bullet/stunshot//taser slugs for shotguns, nothing special
 	name = "stunshot"
