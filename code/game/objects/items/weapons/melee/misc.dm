@@ -33,7 +33,7 @@
 	icon_state = "rapier"
 	item_state = "rapier"
 	flags = CONDUCT
-	force = 15
+	force = 23
 	throwforce = 10
 	w_class = WEIGHT_CLASS_BULKY
 	block_chance = 50
@@ -55,7 +55,7 @@
 	desc = "Used for chopping ice. Also excellent for mafia esque murders."
 	icon_state = "icepick"
 	item_state = "icepick"
-	force = 15
+	force = 23
 	throwforce = 10
 	w_class = WEIGHT_CLASS_SMALL
 	attack_verb = list("stabbed", "jabbed", "iced,")

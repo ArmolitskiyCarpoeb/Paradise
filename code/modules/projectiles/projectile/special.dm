@@ -23,7 +23,7 @@
 /obj/item/projectile/bullet/gyro
 	name ="explosive bolt"
 	icon_state= "bolter"
-	damage = 50
+	damage = 65
 	alwayslog = TRUE
 	flag = "bullet"
 
@@ -230,8 +230,8 @@
 
 /obj/item/projectile/bullet/frag12
 	name ="explosive slug"
-	damage = 25
-	weaken = 5
+	damage = 37
+	weaken = 7
 	alwayslog = TRUE
 
 /obj/item/projectile/bullet/frag12/on_hit(atom/target, blocked = 0)

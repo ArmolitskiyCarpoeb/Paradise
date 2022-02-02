@@ -1,6 +1,6 @@
 /obj/item/melee/energy
 	var/active = 0
-	var/force_on = 30 //force when active
+	var/force_on = 50 //force when active
 	var/throwforce_on = 20
 	var/faction_bonus_force = 0 //Bonus force dealt against certain factions
 	var/list/nemesis_factions //Any mob with a faction that exists in this list will take bonus damage/effects
@@ -81,10 +81,10 @@
 	desc = "An energised battle axe."
 	icon_state = "axe0"
 	icon_state_on = "axe1"
-	force = 40
+	force = 38
 	force_on = 150
 	throwforce = 25
-	throwforce_on = 30
+	throwforce_on = 35
 	throw_speed = 3
 	throw_range = 5
 	w_class = WEIGHT_CLASS_NORMAL

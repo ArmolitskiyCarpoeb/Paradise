@@ -50,7 +50,7 @@
 	flags = CONDUCT
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	slot_flags = SLOT_BELT
-	force = 40
+	force = 48
 	throwforce = 10
 	sharp = 1
 	embed_chance = 20
@@ -69,7 +69,7 @@
 /obj/item/claymore/ceremonial
 	name = "ceremonial claymore"
 	desc = "An engraved and fancy version of the claymore. It appears to be less sharp than it's more functional cousin."
-	force = 20
+	force = 25
 
 /obj/item/katana
 	name = "katana"
@@ -78,10 +78,10 @@
 	item_state = "katana"
 	flags = CONDUCT
 	slot_flags = SLOT_BELT | SLOT_BACK
-	force = 40
+	force = 45
 	throwforce = 10
 	sharp = 1
-	embed_chance = 20
+	embed_chance = 25
 	embedded_ignore_throwspeed_threshold = TRUE
 	w_class = WEIGHT_CLASS_NORMAL
 	hitsound = 'sound/weapons/bladeslice.ogg'
@@ -107,7 +107,7 @@
 	desc = "Tharr she blows!"
 	icon_state = "harpoon"
 	item_state = "harpoon"
-	force = 20
+	force = 25
 	throwforce = 15
 	w_class = WEIGHT_CLASS_NORMAL
 	attack_verb = list("jabbed","stabbed","ripped")
@@ -188,7 +188,7 @@
 	item_state = "baseball_bat"
 	var/deflectmode = FALSE // deflect small/medium thrown objects
 	var/lastdeflect
-	force = 10
+	force = 18
 	throwforce = 12
 	attack_verb = list("beat", "smacked")
 	w_class = WEIGHT_CLASS_HUGE
@@ -299,7 +299,7 @@
 	desc = "This bat is made of highly reflective, highly armored material."
 	icon_state = "baseball_bat_metal"
 	item_state = "baseball_bat_metal"
-	force = 12
+	force = 22
 	throwforce = 15
 
 /obj/item/melee/baseball_bat/ablative/IsReflect()//some day this will reflect thrown items instead of lasers

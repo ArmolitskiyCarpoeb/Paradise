@@ -177,7 +177,7 @@
 	icon_state = "fireaxe0"
 	name = "fire axe"
 	desc = "Truly, the weapon of a madman. Who would think to fight fire with an axe?"
-	force = 5
+	force = 7
 	throwforce = 15
 	sharp = TRUE
 	embed_chance = 25
@@ -185,7 +185,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = SLOT_BACK
 	force_unwielded = 5
-	force_wielded = 24
+	force_wielded = 30
 	toolspeed = 0.25
 	attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
@@ -210,7 +210,7 @@
 	icon_state = "bone_axe0"
 	name = "bone axe"
 	desc = "A large, vicious axe crafted out of several sharpened bone plates and crudely tied together. Made of monsters, by killing monsters, for killing monsters."
-	force_wielded = 23
+	force_wielded = 25
 	needs_permit = TRUE
 
 /obj/item/twohanded/fireaxe/boneaxe/update_icon()
@@ -218,7 +218,7 @@
 
 /obj/item/twohanded/fireaxe/energized
 	desc = "Someone with a love for fire axes decided to turn this one into a high-powered energy weapon. Seems excessive."
-	force_wielded = 30
+	force_wielded = 40
 	armour_penetration = 20
 	var/charge = 30
 	var/max_charge = 30
@@ -268,13 +268,13 @@
 	w_class = WEIGHT_CLASS_SMALL
 	var/w_class_on = WEIGHT_CLASS_BULKY
 	force_unwielded = 3
-	force_wielded = 34
+	force_wielded = 50
 	wieldsound = 'sound/weapons/saberon.ogg'
 	unwieldsound = 'sound/weapons/saberoff.ogg'
-	armour_penetration = 35
+	armour_penetration = 40
 	origin_tech = "magnets=4;syndicate=5"
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
-	block_chance = 75
+	block_chance = 50
 	sharp_when_wielded = TRUE // only sharp when wielded
 	max_integrity = 200
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 70)
@@ -369,11 +369,11 @@
 	icon_state = "spearglass0"
 	name = "spear"
 	desc = "A haphazardly-constructed yet still deadly weapon of ancient design."
-	force = 10
+	force = 12
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = SLOT_BACK
 	force_unwielded = 10
-	force_wielded = 18
+	force_wielded = 20
 	throwforce = 20
 	throw_speed = 4
 	armour_penetration = 10
@@ -381,7 +381,7 @@
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_verb = list("attacked", "poked", "jabbed", "torn", "gored")
 	sharp = TRUE
-	embed_chance = 50
+	embed_chance = 52
 	embedded_ignore_throwspeed_threshold = TRUE
 	no_spin_thrown = TRUE
 	var/obj/item/grenade/explosive = null
@@ -396,8 +396,8 @@
 /obj/item/twohanded/spear/CheckParts(list/parts_list)
 	var/obj/item/shard/tip = locate() in parts_list
 	if(istype(tip, /obj/item/shard/plasma))
-		force_wielded = 19
-		force_unwielded = 11
+		force_wielded = 25
+		force_unwielded = 14
 		throwforce = 21
 		icon_prefix = "spearplasma"
 	update_icon()
@@ -425,10 +425,10 @@
 	icon_state = "bone_spear0"
 	name = "bone spear"
 	desc = "A haphazardly-constructed yet still deadly weapon. The pinnacle of modern technology."
-	force = 11
-	force_unwielded = 11
-	force_wielded = 20					//I have no idea how to balance
-	throwforce = 22
+	force = 12
+	force_unwielded = 12
+	force_wielded = 24					//I have no idea how to balance
+	throwforce = 24
 	armour_penetration = 15				//Enhanced armor piercing
 	icon_prefix = "bone_spear"
 
@@ -437,9 +437,9 @@
 	icon_state = "spearglass0"
 	name = "\improper Grey Tide"
 	desc = "Recovered from the aftermath of a revolt aboard Defense Outpost Theta Aegis, in which a seemingly endless tide of Assistants caused heavy casualities among Nanotrasen military forces."
-	force_unwielded = 15
-	force_wielded = 25
-	throwforce = 20
+	force_unwielded = 16
+	force_wielded = 26
+	throwforce = 22
 	throw_speed = 4
 	attack_verb = list("gored")
 
@@ -515,7 +515,7 @@
 	icon_state = "gchainsaw_off"
 	flags = CONDUCT
 	force = 13
-	var/force_on = 24
+	var/force_on = 26
 	w_class = WEIGHT_CLASS_HUGE
 	throwforce = 13
 	throw_speed = 2
@@ -565,7 +565,7 @@
 	name = "OOOH BABY"
 	desc = "<span class='warning'>VRRRRRRR!!!</span>"
 	armour_penetration = 100
-	force_on = 30
+	force_on = 45
 
 /obj/item/twohanded/required/chainsaw/doomslayer/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK)
 	if(attack_type == PROJECTILE_ATTACK)
@@ -580,13 +580,13 @@
 	icon_state = "chainsaw0"
 	name = "Chainsaw"
 	desc = "Perfect for felling trees or fellow spacemen."
-	force = 15
+	force = 16
 	throwforce = 15
 	throw_speed = 1
 	throw_range = 5
 	w_class = WEIGHT_CLASS_BULKY // can't fit in backpacks
-	force_unwielded = 15 //still pretty robust
-	force_wielded = 40  //you'll gouge their eye out! Or a limb...maybe even their entire body!
+	force_unwielded = 16 //still pretty robust
+	force_wielded = 45  //you'll gouge their eye out! Or a limb...maybe even their entire body!
 	hitsound = null // Handled in the snowflaked attack proc
 	wieldsound = 'sound/weapons/chainsawstart.ogg'
 	hitsound = null
@@ -637,9 +637,9 @@
 	icon_state = "mjollnir0"
 	flags = CONDUCT
 	slot_flags = SLOT_BACK
-	force = 5
-	force_unwielded = 5
-	force_wielded = 20
+	force = 6
+	force_unwielded = 6
+	force_wielded = 25
 	throwforce = 15
 	throw_range = 1
 	w_class = WEIGHT_CLASS_HUGE

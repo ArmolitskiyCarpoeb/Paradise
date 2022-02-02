@@ -3,7 +3,7 @@
 	desc = "A rod of pure obsidian, its very presence disrupts and dampens the powers of dark magic."
 	icon_state = "nullrod"
 	item_state = "nullrod"
-	force = 15
+	force = 20
 	throw_speed = 3
 	throw_range = 4
 	throwforce = 10

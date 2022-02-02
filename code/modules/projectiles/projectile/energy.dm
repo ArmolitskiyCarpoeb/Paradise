@@ -12,8 +12,8 @@
 	color = "#FFFF00"
 	shockbull = TRUE
 	nodamage = 1
-	stun = 5
-	weaken = 5
+	stun = 6
+	weaken = 6
 	stutter = 5
 	jitter = 20
 	hitsound = 'sound/weapons/tase.ogg'

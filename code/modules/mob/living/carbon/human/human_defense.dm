@@ -456,8 +456,8 @@ emp_act
 						if(prob(I.force))
 							visible_message("<span class='combat danger'>[src] has been knocked down!</span>", \
 											"<span class='combat userdanger'>[src] has been knocked down!</span>")
-							apply_effect(5, WEAKEN, armor)
-							AdjustConfused(15)
+							apply_effect(15, WEAKEN, armor)
+							AdjustConfused(20)
 						if(prob(I.force + ((100 - health)/2)) && src != user && I.damtype == BRUTE)
 							SSticker.mode.remove_revolutionary(mind)
 

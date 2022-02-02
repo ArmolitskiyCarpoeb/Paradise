@@ -10,7 +10,7 @@
 /obj/item/projectile/bullet/weakbullet //beanbag, heavy stamina damage
 	name = "beanbag slug"
 	damage = 5
-	stamina = 80
+	stamina = 82
 
 /obj/item/projectile/bullet/weakbullet/booze
 
@@ -34,7 +34,7 @@
 /obj/item/projectile/bullet/weakbullet2  //detective revolver
 	name = "rubber bullet"
 	damage = 5
-	stamina = 35
+	stamina = 40
 	icon_state = "bullet-r"
 
 /obj/item/projectile/bullet/weakbullet2/invisible //finger gun bullets
@@ -52,16 +52,16 @@
 	log_override = TRUE
 
 /obj/item/projectile/bullet/weakbullet3
-	damage = 20
+	damage = 26
 
 /obj/item/projectile/bullet/weakbullet4
 	name = "rubber bullet"
-	damage = 5
-	stamina = 30
+	damage = 6
+	stamina = 37
 	icon_state = "bullet-r"
 
 /obj/item/projectile/bullet/toxinbullet
-	damage = 15
+	damage = 16
 	damage_type = TOX
 
 /obj/item/projectile/bullet/incendiary
@@ -74,28 +74,28 @@
 		M.IgniteMob()
 
 /obj/item/projectile/bullet/incendiary/firebullet
-	damage = 10
+	damage = 15
 
 /obj/item/projectile/bullet/armourpiercing
-	damage = 17
-	armour_penetration = 10
+	damage = 25
+	armour_penetration = 13
 
 /obj/item/projectile/bullet/pellet
 	name = "pellet"
-	damage = 12.5
+	damage = 19.5
 	tile_dropoff = 0.75
 	tile_dropoff_s = 1.25
-	armour_penetration = -30
+	armour_penetration = -20
 
 /obj/item/projectile/bullet/pellet/rubber
 	name = "rubber pellet"
-	damage = 3
-	stamina = 25
+	damage = 4
+	stamina = 32
 	icon_state = "bullet-r"
 
 /obj/item/projectile/bullet/pellet/weak
 	tile_dropoff = 0.55		//Come on it does 6 damage don't be like that.
-	damage = 6
+	damage = 7
 
 /obj/item/projectile/bullet/pellet/weak/New()
 	range = rand(1, 8)
@@ -113,7 +113,7 @@
 	..()
 
 /obj/item/projectile/bullet/pellet/assassination
-	damage = 12
+	damage = 16
 	tile_dropoff = 1	// slightly less damage and greater damage falloff compared to normal buckshot
 
 /obj/item/projectile/bullet/pellet/assassination/on_hit(atom/target, blocked = 0)
@@ -131,26 +131,26 @@
  	..()
 
 /obj/item/projectile/bullet/midbullet
-	damage = 20
-	stamina = 65 //two rounds from the c20r knocks people down
+	damage = 32
+	stamina = 50 //two rounds from the c20r knocks people down
 
 /obj/item/projectile/bullet/midbullet_r
 	damage = 5
-	stamina = 75 //Still two rounds to knock people down
+	stamina = 70 //Still two rounds to knock people down
 
 /obj/item/projectile/bullet/midbullet2
-	damage = 25
+	damage = 35
 
 /obj/item/projectile/bullet/midbullet3
-	damage = 30
+	damage = 46
 
 /obj/item/projectile/bullet/midbullet3/hp
-	damage = 40
-	armour_penetration = -50
+	damage = 60
+	armour_penetration = -45
 
 /obj/item/projectile/bullet/midbullet3/ap
-	damage = 27
-	armour_penetration = 40
+	damage = 40
+	armour_penetration = 50
 
 /obj/item/projectile/bullet/midbullet3/fire/on_hit(atom/target, blocked = 0)
 	if(..(target, blocked))
@@ -159,13 +159,13 @@
 		M.IgniteMob()
 
 /obj/item/projectile/bullet/heavybullet
-	damage = 35
+	damage = 48
 
 /obj/item/projectile/bullet/stunshot//taser slugs for shotguns, nothing special
 	name = "stunshot"
-	damage = 5
-	stun = 5
-	weaken = 5
+	damage = 6
+	stun = 7
+	weaken = 7
 	stutter = 5
 	jitter = 20
 	range = 7
@@ -174,7 +174,7 @@
 
 /obj/item/projectile/bullet/incendiary/shell
 	name = "incendiary slug"
-	damage = 20
+	damage = 28
 
 /obj/item/projectile/bullet/incendiary/shell/Move()
 	..()
@@ -185,13 +185,13 @@
 
 /obj/item/projectile/bullet/incendiary/shell/dragonsbreath
 	name = "dragonsbreath round"
-	damage = 5
+	damage = 12
 
 /obj/item/projectile/bullet/meteorshot
 	name = "meteor"
 	icon = 'icons/obj/meteor.dmi'
 	icon_state = "dust"
-	damage = 30
+	damage = 38
 	weaken = 8
 	stun = 8
 	hitsound = 'sound/effects/meteorimpact.ogg'
@@ -208,14 +208,14 @@
 	SpinAnimation()
 
 /obj/item/projectile/bullet/meteorshot/weak
-	damage = 10
+	damage = 12
 	weaken = 4
 	stun = 4
 
 /obj/item/projectile/bullet/mime
 	damage = 0
-	stun = 5
-	weaken = 5
+	stun = 8
+	weaken = 8
 	slur = 20
 	stutter = 20
 

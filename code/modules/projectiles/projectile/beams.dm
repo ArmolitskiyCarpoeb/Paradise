@@ -2,7 +2,7 @@
 	name = "laser"
 	icon_state = "laser"
 	pass_flags = PASSTABLE | PASSGLASS | PASSGRILLE
-	damage = 20
+	damage = 24
 	damage_type = BURN
 	hitsound = 'sound/weapons/sear.ogg'
 	hitsound_wall = 'sound/weapons/effects/searwall.ogg'
@@ -20,7 +20,7 @@
 /obj/item/projectile/beam/laser/heavylaser
 	name = "heavy laser"
 	icon_state = "heavylaser"
-	damage = 40
+	damage = 50
 
 /obj/item/projectile/beam/practice
 	name = "practice laser"
@@ -36,7 +36,7 @@
 /obj/item/projectile/beam/xray
 	name = "xray beam"
 	icon_state = "xray"
-	damage = 15
+	damage = 18
 	tile_dropoff = 0.75
 	irradiate = 30
 	forcedodge = 1
@@ -59,7 +59,7 @@
 /obj/item/projectile/beam/pulse
 	name = "pulse"
 	icon_state = "u_laser"
-	damage = 50
+	damage = 55
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/blue_laser
 	light_color = LIGHT_COLOR_DARKBLUE
 
@@ -69,12 +69,12 @@
 	..()
 
 /obj/item/projectile/beam/pulse/shot
-	damage = 40
+	damage = 45
 
 /obj/item/projectile/beam/emitter
 	name = "emitter beam"
 	icon_state = "emitter"
-	damage = 30
+	damage = 40
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/green_laser
 	light_color = LIGHT_COLOR_GREEN
 
@@ -121,8 +121,8 @@
 /obj/item/projectile/beam/sniper
 	name = "sniper beam"
 	icon_state = "sniperlaser"
-	damage = 60
-	stun = 5
+	damage = 78
+	stun = 8
 	weaken = 5
 	stutter = 5
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/purple_laser
@@ -133,12 +133,12 @@
 
 /obj/item/projectile/beam/immolator/strong
 	name = "heavy immolation beam"
-	damage = 45
+	damage = 55
 	icon_state = "heavylaser"
 
 /obj/item/projectile/beam/immolator/weak
 	name = "light immolation beam"
-	damage = 8
+	damage = 9
 	icon_state = "scatterlaser"
 
 /obj/item/projectile/beam/immolator/on_hit(var/atom/target, var/blocked = 0)
@@ -151,7 +151,7 @@
 /obj/item/projectile/beam/instakill
 	name = "instagib laser"
 	icon_state = "purple_laser"
-	damage = 200
+	damage = 222
 	damage_type = BURN
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/purple_laser
 	light_color = LIGHT_COLOR_PURPLE
@@ -181,8 +181,8 @@
 /obj/item/projectile/beam/dominator/slaughter
 	name = "execution slaughter beam"
 	icon_state = "blue_laser"
-	damage = 40
-	stamina = 20
+	damage = 50
+	stamina = 25
 	damage_type = BURN
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/blue_laser
 	light_color = LIGHT_COLOR_LIGHT_CYAN
@@ -192,7 +192,7 @@
 /obj/item/projectile/beam/dominator/paralyzer
 	name = "paralyzer beam"
 	icon_state = "omnilaser"
-	damage = 30
+	damage = 40
 	shockbull = TRUE
 	damage_type = STAMINA
 	flag = "energy"

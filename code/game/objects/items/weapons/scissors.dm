@@ -3,7 +3,7 @@
 	desc = "Those are scissors. Don't run with them!"
 	icon_state = "scissor"
 	item_state = "scissor"
-	force = 5
+	force = 8
 	sharp = 1
 	embed_chance = 10
 	embedded_ignore_throwspeed_threshold = TRUE
@@ -51,7 +51,7 @@
 
 /obj/item/scissors/safety //Totally safe, I assure you.
 	desc = "The blades of the scissors appear to be made of some sort of ultra-strong metal alloy."
-	force = 18 //same as e-daggers
+	force = 19 //same as e-daggers
 	var/is_cutting = 0 //to prevent spam clicking this for huge accumulation of losebreath.
 
 /obj/item/scissors/safety/attack(mob/living/carbon/M as mob, mob/user as mob)
